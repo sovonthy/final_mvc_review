@@ -30,3 +30,19 @@
         <input type="submit" class="btn btn-success" value="Submit">
     </form>
 </div>
+
+
+
+<select class="form-control" name="select">
+            <?php
+                foreach ($data['edit_info'] as $key => $value) {
+                ?>
+            <option value="<?php echo $value['pro_id']?>" <?php if($value['pro_id'] == $value1['emp_province_id']){
+                ?>
+                    selected
+                <?php
+            }?> ><?php echo $value['pro_name'] ?></option>
+            <?php
+                }
+            ?>
+        </select>

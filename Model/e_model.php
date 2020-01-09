@@ -1,4 +1,5 @@
 <?php
+
      function get_province(){
         include "connection.php";
         $query = "SELECT * FROM tblprovince";
@@ -75,4 +76,5 @@
         $result = mysqli_query($connection, $update);
         return $result;
     }
+    
 ?>
